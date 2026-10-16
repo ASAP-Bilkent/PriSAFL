@@ -1,0 +1,5 @@
+# GPU PyTorch matching the native `pideel_gpu` env (torch 2.7.1 + CUDA 12.8).
+# The +cu128 local tag only exists on the PyTorch index; pulling its
+# nvidia-*-cu12 / triton deps falls back to PyPI via --extra-index-url.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.7.1+cu128

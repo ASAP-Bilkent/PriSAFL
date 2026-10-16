@@ -1,0 +1,37 @@
+# Numerics-determining pins copied verbatim from the native `pideel_gpu` env
+# (conda env export -n pideel_gpu). These fix the versions that decide the
+# plaintext C-index medians; torch is installed separately (cu128).
+#
+# numba 0.57.1 hard-pins numpy<1.25 + python<=3.11 -> this whole stack is
+# locked to python 3.11 / numpy 1.24, which is exactly why we build the
+# single container env on the plaintext stack (he/ is pure-numpy and runs
+# fine here).
+
+numpy==1.24.4
+scipy==1.11.2
+pandas==1.5.3
+scikit-learn==1.2.2
+scikit-survival==0.21.0
+numba==0.57.1
+llvmlite==0.40.1
+matplotlib==3.7.2
+h5py==3.9.0
+feather-format==0.4.1
+pyarrow==13.0.0
+py7zr==0.20.6
+requests==2.31.0
+pycox==0.2.3
+torchtuples==0.2.2
+
+# torch runtime deps, pinned to the env's versions for byte-stable behaviour
+sympy==1.14.0
+networkx==3.1
+filelock==3.12.3
+jinja2==3.1.2
+typing-extensions==4.16.0
+joblib==1.3.2
+threadpoolctl==3.2.0
+
+# build-time only: needed to compile the openfhe python binding
+pybind11==2.13.6
+wheel

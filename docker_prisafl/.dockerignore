@@ -1,0 +1,4 @@
+# OpenFHE sources are git-cloned inside the image, not sent as build context
+context/src/
+*.log
+.git

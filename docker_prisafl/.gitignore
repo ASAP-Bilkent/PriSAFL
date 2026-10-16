@@ -1,0 +1,6 @@
+# build / benchmark scratch output
+*.log
+
+# OpenFHE sources are fetched at build time (git clone at the pinned tags in
+# the Dockerfile), not vendored. Keep only the pinned requirements/env files.
+context/src/

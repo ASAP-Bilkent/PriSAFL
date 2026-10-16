@@ -1,0 +1,16 @@
+seed,fold,act_func,n_layers,hidden_dim,batch_size,loss_type,n_clients,c_index
+6,0,3-5,4,138,full,coxph,1,0.704545
+6,1,3-5,4,138,full,coxph,1,0.621673
+6,2,3-5,4,138,full,coxph,1,0.673887
+6,3,3-5,4,138,full,coxph,1,0.733761
+6,4,3-5,4,138,full,coxph,1,0.658843
+35,0,3-5,4,138,full,coxph,1,0.651449
+35,1,3-5,4,138,full,coxph,1,0.725011
+35,2,3-5,4,138,full,coxph,1,0.632566
+35,3,3-5,4,138,full,coxph,1,0.565070
+35,4,3-5,4,138,full,coxph,1,0.741794
+81,0,3-5,4,138,full,coxph,1,0.673236
+81,1,3-5,4,138,full,coxph,1,0.648078
+81,2,3-5,4,138,full,coxph,1,0.661709
+81,3,3-5,4,138,full,coxph,1,0.697665
+81,4,3-5,4,138,full,coxph,1,0.656397
